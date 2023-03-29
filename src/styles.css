@@ -1,0 +1,207 @@
+/*
+
+*/
+
+:root {
+  --primary-color: #ea4c89;
+  --shadow-color: #f082ac;
+  --secondary-color: rgb(239, 241, 242);
+  --completed-color: green;
+  --todo-text-color: black;
+  --todo-background-color: #f7f7f7;
+  --button-active-color: #ea4c89;
+  --todo-shadow-color: rgba(0, 0, 0, 20%);
+  --edit-color: lightskyblue;
+  --alt-color: white;
+}
+
+.MainView {
+  text-align: center;
+  background-color: var(--secondary-color);
+  width: 700px;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 400px;
+}
+
+.TitleView {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.TitleIconStyle {
+  color: var(--primary-color);
+  border: var(--primary-color);
+  border-width: 1px;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.TitleStyle {
+  font-size: 25px;
+  margin-left: 10px;
+  color: var(--primary-color);
+  font-weight: bold;
+  vertical-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+.RowStyle {
+  margin-top: 10px;
+}
+
+.RowInputStyle {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.RowInputStyle1st {
+  text-align: left;
+}
+
+.RowInputStyle2nd {
+  text-align: right;
+}
+
+.InputText {
+  padding: 5px;
+  border-radius: 4px;
+  border: 0px;
+  width: 300px;
+  background-color: var(--todo-background-color);
+  box-shadow: 0 0.5rem 1.2rem var(--todo-shadow-color);
+  padding: 9px;
+}
+
+.InputText:focus {
+  background-color: var(--alt-color);
+  outline: none;
+}
+
+.ButtonStyle:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 6px;
+  background-color: var(--shadow-color);
+  border: 3px solid var(--primary-color);
+  margin-left: 5px;
+}
+
+.ButtonStyle {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 6px;
+  border: 3px solid var(--primary-color);
+  margin-left: 5px;
+  background-color: var(--primary-color);
+}
+
+.BtnStyle2 {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: var(--alt-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  margin-left: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.BtnStyle2:hover {
+  background-color: var(--shadow-color);
+}
+
+.BtnStyle2:focus {
+  background-color: var(--alt-color);
+  color: var(--button-active-color);
+}
+
+.TodoItemTextDeleted {
+  text-decoration: line-through;
+  text-decoration-color: var(--todo-text-color);
+}
+
+.TodoItemTextCompleted {
+  color: var(--completed-color);
+  font-weight: bold;
+}
+
+.TodoItemText {
+  color: var(--todo-text-color);
+}
+
+.trashButton {
+  background-color: var(--button-active-color);
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 7px;
+  margin: 5px 0px 5px 5px;
+}
+
+.completeButton {
+  background-color: var(--completed-color);
+  color: var(--alt-color);
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 7px;
+  margin-left: 5px;
+}
+
+.editButton {
+  background-color: var(--edit-color);
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 7px;
+  margin-left: 5px;
+}
+
+.TaskStyle {
+  line-height: 40px;
+  text-align: center;
+  background-color: var(--todo-background-color);
+  border-radius: 4px;
+  margin: 2px 2px 20px 2px;
+  box-shadow: 0 0.5rem 1.2rem var(--todo-shadow-color);
+  display: grid;
+  grid-template-columns: 36px auto 130px;
+}
+
+.TaskStyleText {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.TaskStyleInput {
+  width: 95%;
+  background-color: var(--todo-background-color);
+  border: 0px;
+}
+
+.TaskStyleInput:focus {
+  outline: none;
+}
