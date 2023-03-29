@@ -23,7 +23,7 @@ const arrayObjects = [
   },
   {
     id: 2,
-    text: "Notīrīt hanteles",
+    text: "Nomazgāt traukus",
     completed: false,
     deleted: false,
     isEdit: false,
